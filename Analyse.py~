@@ -1,0 +1,18 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
+
+#klasa Analysis - zawiera metody analizy technicznej
+class Analysis(object):
+	def __init__(self):
+		self.INDICATOR = {"buy": -1, "hold": 0, "sell": 1}
+	
+	def price_limits(self, arg, lower_limit, upper_limit):
+		if arg > upper_limit:
+			return "buy"
+		elif arg < lower_limit:
+			return "sell"
+		else:
+			return "hold"
+

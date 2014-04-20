@@ -8,3 +8,6 @@ You must have installed:
 python2.7
 python-requests
 wxpython
+
+To run program just type in terminal:
+python test.py
